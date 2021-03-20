@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="/css/Index.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    
+      <center>
+        <hgroup id="home">
+          <h1 style="font-size: 80px;""><span style="color: white;"><strong>Tic Tac Toe</strong></span></h1>
+          
+          <div text-align=left>
+            </br> 
+              <button id="invite-gamer" class="glow-on-hover" type="button">
+                  Mitspieler einladen
+                </button>
+              </div>
+            </br> 
+          <h2 id="score" style="background-color:rgb(255, 255, 255)";">
+           
+            <font color="red"> Player A </font><span id="playerScore">0</span> :
+            <span id="player2Score">0</span> <font color="blue"> Player B</font>
+          </h2>
+        </hgroup>
+        <div>
+        </br>     
+        </div>
+        
+          <div id="game-message"></div>
+          <div>
+            </br>     
+            </div>
+        <div id="Spielfeld"></div>
+      </br>
+       
+      </center>
+    
+    <script
+      src="https://cdn.socket.io/3.1.1/socket.io.min.js"
+      integrity="sha384-gDaozqUvc4HTgo8iZjwth73C6dDDeOJsAgpxBcMpZYztUfjHXpzrpdrHRdVp8ySO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>

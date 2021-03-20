@@ -1,0 +1,195 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 15px;
+  font-family: impact;
+}
+
+.header{
+  width: 100%;
+}
+
+h1{
+  font-size:120px;  
+  font-family:Impact
+  color: white;
+  text-align:center;
+  
+}
+.body{
+  background-image: url("test.jpg");
+  background-clip: border-box
+  background-repeat: round;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 60px;
+ 
+  min-height: 150px;
+  position: relative;
+  
+  margin-bottom: 5%;
+}
+
+.img {
+  width: 20%;
+  right: 0px;
+  top: 15px;
+  left: 0px;
+  position: relative;
+}
+
+
+.Bottombereich{
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  min-height: 150px;
+
+}
+
+@keyframes change {
+  0%{
+    background-position: 0 50%;
+    }
+  50%{
+    background-position: 100% 50%;
+    }
+  100%{
+    background-position: 0 50%;
+    }
+}
+
+h2{
+  
+  width: 200px;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  border: 3px solid #fff;
+  width: 200px;
+  text-align:center;
+
+  border-radius: 15px;
+}
+
+h4{
+  
+ width: 100px;
+  font-size: 3rem;
+  letter-spacing: 2px;
+ 
+  
+  
+}
+.left {
+  float: left;
+  width: 25%;
+  height: 100px;
+  background-color: transparent;
+  position: relative;
+}
+.right {
+  float: left;
+  width: 25%;
+  height: 100px;
+  background-color: transparent;
+  position: relative;
+
+  
+}
+.middle {
+  background-color: transparent;
+  width: 50%;
+  height: 70px;
+  float: left;
+  position: relative;
+}
+
+button {
+  width: 400px;
+}
+.myButton {
+  background-color: transparent;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: monospace;
+  border-color: white;
+  border-width: 3px;
+
+  font-size: 16px;
+  font-weight: bold;
+  padding: 19px 76px;
+  text-decoration: none;
+
+  transition: all 250ms ease
+  animation: animation-out 500ms forwards
+}
+
+  .myButton:hover {
+  animation: animation-in 500ms forwards
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+.splash {
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(20deg) 
+  
+  
+}
+@keyframes animation-in {
+  0%{
+    transform: translate(0,0);
+    }
+  50%{
+    transform: translate(0, 1rem);
+    }
+  100%{
+    transform: translate(0, 1rem) rotate(5deg);
+    }
+}
+
+@keyframes animation-out {
+  0%{
+    transform: translate(0, 1rem) rotate(5deg);
+    }
+  50%{
+    transform: translate(0, 1rem);
+    }
+  100%{
+    transform: translate(0,0);
+    }
+}
+.bouncy {
+  animation: pop 0.58s infinite;
+  -webkit-animation: bouncy 0.58s infinite;
+}
+@keyframes bouncy {
+  from {
+      transform:scale(0.95)
+  }
+  50% {
+      transform:scale(1)
+  }
+  to {
+      transform:scale(0.95)
+  }
+}
+@-webkit-keyframes bouncy {
+  from {
+      -webkit-transform:scale(0.95)
+  }
+  50% {
+      -webkit-transform:scale(1)
+  }
+  to {
+      -webkit-transform:scale(0.95)
+  }
+}
